@@ -17,6 +17,7 @@ namespace DataProcessor
             Console.WriteLine(String.Format("Number of rows: {0}", dataReader.NumberOfForces));
             Console.WriteLine("Press enter key to exit");
             Console.ReadLine();
+            Console.WriteLine("I breathe");
         }
     }
 
