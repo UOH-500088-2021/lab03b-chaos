@@ -46,6 +46,10 @@ namespace DataProcessor
                     var columns = line.Split(",");  // What if there's a comma inside a data column?
                     foreach (string number in columns)
                     {
+                        if (number == "") 
+                        {
+                            break;
+                        }
                         bool passed = int.TryParse(number, out int calls);
                         if (passed == true)
                         {
